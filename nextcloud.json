@@ -1,0 +1,35 @@
+{
+    "name": "Nextcloud",
+    "plugin_schema": "2",
+    "release": "13.0-RELEASE",
+    "artifact": "https://github.com/freenas/iocage-plugin-nextcloud.git",
+    "official": false,
+    "properties": {
+        "dhcp": 1
+    },
+    "pkgs": [
+        "ffmpeg",
+        "nextcloud-php80",
+        "php80-pecl-imagick-im7",
+        "php80-bcmath",
+        "php80-gmp",
+        "php80-pcntl",
+        "php80-pecl-redis",
+        "php80-phar",
+        "nginx",
+        "mysql80-server",
+        "redis",
+        "py38-fail2ban",
+        "py38-certbot"
+    ],
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/quarterly",
+    "fingerprints": {
+        "iocage-plugins": [
+            {
+                "function": "sha256",
+                "fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+            }
+        ]
+    },
+    "revision": "1"
+}
